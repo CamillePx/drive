@@ -1,0 +1,306 @@
+body{
+   // background: url(../img/bg.jpg) top center no-repeat;
+    font-family: $openSans;
+    color: #fff;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+p{
+    margin-bottom: 1.5em;
+}
+/*HEADER*/
+header{
+    text-align: center;
+    color: $grey;
+    padding: 4.2em 0;
+    .tagline{
+        font-size: 1.5em;
+        position: relative;
+        padding: 0 30px;
+        display: inline-block;
+        margin-bottom: 1em;
+        &:after, &:before{
+            content:"";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            height: 2px;
+            width: 20px;
+            background: $grey;
+        }
+        &:after{
+            right: 0;
+            left: auto;
+        }
+    }
+    .logo{
+        span{
+            visibility: hidden;
+        }
+        background: url("../img/drive.png") center center no-repeat;
+        background-size: contain;
+        width: 80%;
+        margin: .6em auto;
+        height: 257px;
+        height: 257px;
+        position: relative;
+        &:after{
+            content:"";
+            position: absolute;
+            display: block;
+            background: $grey;
+            width: 200vw;
+            height: 15em;
+            z-index: -1;
+            left: -50vw;
+            top: 51%;
+        }
+    }
+}
+
+section{
+    margin: 5em auto;
+    position: relative;
+    .title--left, .title--right{
+        font-size: 1em;
+        text-transform: uppercase;
+        color:$red;
+        padding-left: 30px;
+        position: absolute;
+        transform: rotate(-90deg);
+        bottom: 0;
+        &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background: $red;
+            left: 0;
+            top: 50%;
+        }
+    }
+    .title--left{
+        left: 2em;
+    }
+    .title--right{
+        right: 2em;
+    }
+}
+/*IDEA*/
+.idea{
+    width: 80%;
+    max-width: 1420px;
+    margin: 5em auto 0;
+    .text{
+        width: 49%;
+        float: left;
+        color: $grey;
+        padding: 4.2em 4em 3.2em;
+        box-sizing: border-box;
+        position: relative;
+        background: #fff;
+        position: relative;
+        .title{
+            bottom: 4em;
+            left: -2.6em;
+        }
+        &:after{
+            content:"";
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: url("../img/idea.jpg") center no-repeat;
+            position: absolute;
+            top: 0;
+            right: -108%;
+            background-size: cover;
+        }
+    }
+}
+
+/*RESULT*/
+.result{
+    margin-top: 9em;
+    .title--right{
+        right: 0;
+        bottom: 3em;
+    }
+    .left{
+        width: 65%;
+        float: left;
+        img, video{
+            width: 100%;
+            margin-top: 3em;
+        }   
+    }
+    .right{
+        width: 35%;
+        float: right;
+        padding: 5em 5em 4em 3em;
+        box-sizing: border-box;
+    }
+    .title--result{
+        font-weight: 400;
+        color: $grey;
+    }
+    .result--select{
+        margin-top: 4em;
+        .result--select__el{
+            margin-bottom: 1em;
+            cursor: pointer;
+            color: $lightGrey;
+            transition: .2s;
+        }
+        .result--select__el:hover,
+        .result--select__el:active,
+        .result--select__el:focus{
+            color: $grey;
+        }
+        .result--select__active{
+            color: $red;
+        }
+    }
+    .select{
+        display: none;
+    }
+    .select--active{
+        display: block;
+    }
+}
+
+/*WORK*/
+.work{
+    width: 80%;
+    margin-top: 9em;
+    max-width: 720px;
+    background: $grey;
+    box-sizing: border-box;
+    padding: 4.5em 4em;
+    -webkit-box-shadow: 7px 7px 5px 3px rgba(100,100,100,0.56);
+    -moz-box-shadow: 7px 7px 5px 3px rgba(100,100,100,0.56);
+    box-shadow: 7px 7px 5px 3px rgba(100,100,100,0.56);
+    position: relative;
+    .title{
+        bottom: 5em;
+        right: -2em;
+    }
+}
+
+/*PROGRESS*/
+.progress{
+    margin: 9em auto 10em;
+    .right{
+        width: 50%;
+        padding: 2em 6em 2em 3.5em;
+        box-sizing: border-box;
+        float: right;
+        position: relative;
+        .title{
+            bottom: 8em;
+            left: -6.5em;
+        }
+        &:after{
+            content:"";
+            display: block;
+            position: absolute;
+            width: 50vw;
+            height: 100%;
+            top: 0;
+            left: -53vw;
+            background: url("../img/progress.jpg") center center no-repeat;
+            background-size: cover;
+        }
+    }
+    .progress--select{
+        margin-bottom: 3em;
+        .progress--select__el{
+            color: $lightGrey;
+            display: inline-block;
+            margin-right: 32px;
+            cursor: pointer;
+            transition: .2s;
+        }
+        .progress--select__el:hover,
+        .progress--select__el:active,
+        .progress--select__el:focus{
+            color: $grey;
+        }
+        .progress--select__active{
+            color: $red;
+        }
+    }
+    .progress--content{
+        display: none;
+        color: $grey;
+        min-height: 410px;
+    }
+    .progress--content__active{
+        display: block;
+    }
+}
+.download{
+    text-align: center;
+    padding: 3em 2em 5em;
+    background: $red;
+    margin-bottom: 0;
+    .title--center{
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+    .buttons{
+        margin-top: 2.5em;
+        .buttons--el{
+            display: inline-block;
+            a{
+                text-decoration: none;
+                padding: 10px 30px;
+                background: #fff;
+                color: $grey;
+                transition: .2s;
+                border: 1px solid #fff;
+            }
+            a:hover{
+                background: none;
+            }
+        }
+        .buttons--el__dark{
+            margin-right: 30px;
+            a{
+                background: $grey;
+                border: 1px solid $grey;
+                color: #fff;
+            }
+        }
+    }
+}
+/*REFERENCES*/
+.references{
+    @extend .download;
+    margin-top: 0;
+    background: $grey;
+    a{
+        color: #fff;
+        text-decoration: none;
+        font-size: .8em;
+        transition: .15s;
+        &:hover{
+            color: $red;
+        }
+    }
+}
+/*FOOTER*/
+footer{
+    @extend .references;
+    padding: 0 0 1em 0;
+    a{
+        font-size: 1em;
+    }
+}

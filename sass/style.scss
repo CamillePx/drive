@@ -1,0 +1,14 @@
+/*NORMALIZE*/
+@import "normalize";
+
+/*FONTS*/
+$openSans : 'Open Sans', sans-serif;
+
+/*COLORS*/
+$grey : #292929;
+$red : #c11e12;
+$lightGrey : #b3b2b2;
+
+/*LAYOUTS & RESPONSIVE*/
+@import "layouts";
+@import "responsive";

@@ -1,0 +1,140 @@
+@media (max-width: 1220px){
+    .result{
+        margin: 5em 0;
+        .title--right{
+            bottom: auto;
+            top: 5em;
+        }
+        .left, .right{
+            float: none;
+            width: 94%;
+            margin: 0 auto;
+        }
+        .right{
+            text-align: center;
+            padding: 0;
+        }
+        .result--select{
+            margin-top: 1em;
+            .result--select__el{
+                margin-bottom: .5em;
+            }
+        }
+    }
+    .progress{
+        margin-bottom: 19em;
+        .right{
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 2em 4em;
+            float: none;
+            &:after{
+                width: 100vw;
+                height: 450px;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
+        .progress--select{
+            margin-bottom: 1em;
+        }
+        .progress--content{
+            min-height: 280px;
+        }
+    }
+}
+@media (max-width: 1200px){
+    .idea{
+        width: 94%;
+        .text{
+            width: 60%;
+            &:after{
+                right: -100%;
+            }
+        }
+    }
+}
+@media (max-width: 900px){
+    header{
+        padding: 2em 0;
+        .tagline{
+            font-size: 1.2em;
+        }
+        .logo{
+            height: 150px;
+        }
+    }
+    section{
+        margin: 3em auto;
+    }
+    .idea{
+        width: 94%;
+        .text{
+            width: 100%;
+            margin-bottom: 260px;
+            &:after{
+                right: 0;
+                top: 100%;
+                height: 360px;
+            }
+        }
+    }
+    .result{
+        margin-top: 9em;
+    }
+}
+@media (max-width:700px){
+    .idea .text{
+        padding: 2em;
+        .title--left{
+            transform: rotate(0deg);
+            position: relative;
+            top:0;
+            left: 0;
+        }
+    }
+    .work{
+        padding: 2em;
+        width: 94%;
+        .title--right{
+            transform: rotate(0deg);
+            position: relative;
+            top:0;
+            left: 0;
+        }
+    }
+    .progress{
+        width: 94%;
+        margin-top: 3em;
+        .right{
+            width: 100%;
+            padding: 2em;
+            .title--left{
+                transform: rotate(0deg);
+                position: relative;
+                top:0;
+                left: 0;
+            }
+        }
+    }
+    .result{
+        .title--right{
+            transform: rotate(0deg);
+            position: relative;
+            top:0;
+            left: 2em;
+            text-align: left;
+        }
+    }
+}
+@media (max-width:610px){
+    .download{
+        padding: 2em 0.5em;
+        .buttons .buttons--el{
+            display: block;
+            margin: 2em auto;
+        }
+    }
+}
