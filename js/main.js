@@ -1,4 +1,16 @@
 $(document).ready(function () {
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top + 2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
+    
     var together = document.getElementsByClassName("result--select__together")[0], 
         app = document.getElementsByClassName("result--select__app")[0],
         inside = document.getElementsByClassName("result--select__inside")[0],
@@ -80,6 +92,10 @@ $(document).ready(function () {
         togetherContent.classList.remove("select--active");
         appContent.classList.remove("select--active");
         insideContent.classList.remove("select--active");
+        togetherContent.pause();
+        togetherContent.load();
+        insideContent.pause();
+        insideContent.load();
     }
         
 });

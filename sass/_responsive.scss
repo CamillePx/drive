@@ -56,6 +56,14 @@
         }
     }
 }
+@media (max-width: 1030px){
+    header{
+        padding: 3em 0;
+        .logo{
+            font-size: 3em;
+        }
+    }
+}
 @media (max-width: 900px){
     header{
         padding: 2em 0;
